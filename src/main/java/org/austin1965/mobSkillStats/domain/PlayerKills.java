@@ -27,4 +27,11 @@ public class PlayerKills {
     PlayerKills that = (PlayerKills) o;
     return Objects.equals(playerName, that.playerName) && Objects.equals(kills, that.kills);
   }
+
+  public void countKill(String mobType) {
+    this.getKills()
+        .compute(
+            mobType,
+            (k, existingKillCount) -> existingKillCount != null ? existingKillCount + 1 : 1);
+  }
 }

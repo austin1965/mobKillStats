@@ -14,11 +14,7 @@ public class MobSlayerService {
       return;
     }
     PlayerKills kills = playerKillPersistence.getExistingKills(mobDeath.getKillerName());
-    kills
-        .getKills()
-        .compute(
-            mobDeath.getMobType(),
-            (k, existingKillCount) -> existingKillCount != null ? existingKillCount + 1 : 1);
+    kills.countKill(mobDeath.getMobType());
     playerKillPersistence.saveKills(kills);
   }
 }

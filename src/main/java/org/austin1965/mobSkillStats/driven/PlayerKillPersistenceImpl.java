@@ -24,7 +24,7 @@ public class PlayerKillPersistenceImpl implements PlayerKillPersistence {
     String playerFile = String.format("plugins\\MobKillStatsUserData\\%s.json", mobSlayer);
     ObjectMapper objectMapper = new ObjectMapper();
 
-    Map<String, Integer> mobKills = new HashMap<>();
+    Map<String, Integer> mobKills;
     try {
       mobKills = objectMapper.readValue(new File(playerFile), Map.class);
     } catch (IOException e) {
