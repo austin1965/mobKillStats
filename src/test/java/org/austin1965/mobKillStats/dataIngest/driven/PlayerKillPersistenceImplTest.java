@@ -1,4 +1,4 @@
-package org.austin1965.mobKillStats.driven;
+package org.austin1965.mobKillStats.dataIngest.driven;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -6,14 +6,22 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.io.IOException;
 import java.util.Map;
-import org.austin1965.mobSkillStats.domain.PlayerKills;
-import org.austin1965.mobSkillStats.driven.PlayerKillPersistenceImpl;
+
+import org.apache.commons.io.FileUtils;
+import org.austin1965.mobSkillStats.dataIngest.domain.PlayerKills;
+import org.austin1965.mobSkillStats.dataIngest.driven.PlayerKillPersistenceImpl;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 class PlayerKillPersistenceImplTest {
   PlayerKillPersistenceImpl classUnderTest = new PlayerKillPersistenceImpl();
+
+  @BeforeEach
+  void setUp() throws IOException {
+    FileUtils.cleanDirectory(new File("plugins\\MobKillStatsUserData"));
+  }
 
   @Test
   void shouldSaveFirstKill() throws IOException {

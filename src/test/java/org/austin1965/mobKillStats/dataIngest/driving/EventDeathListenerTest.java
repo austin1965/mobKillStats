@@ -1,4 +1,4 @@
-package org.austin1965.mobKillStats.driving;
+package org.austin1965.mobKillStats.dataIngest.driving;
 
 import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.times;
@@ -6,9 +6,9 @@ import static org.mockito.Mockito.verify;
 
 import org.austin1965.mobKillStats.dummyImplementations.DummyLivingEntity;
 import org.austin1965.mobKillStats.dummyImplementations.DummyPlayer;
-import org.austin1965.mobSkillStats.application.MobSlayerService;
-import org.austin1965.mobSkillStats.domain.MobDeath;
-import org.austin1965.mobSkillStats.driving.EntityDeathListener;
+import org.austin1965.mobSkillStats.dataIngest.application.MobSlayerService;
+import org.austin1965.mobSkillStats.dataIngest.domain.MobDeath;
+import org.austin1965.mobSkillStats.dataIngest.driving.EntityDeathListener;
 import org.bukkit.entity.EntityType;
 import org.bukkit.event.entity.EntityDeathEvent;
 import org.junit.jupiter.api.Test;

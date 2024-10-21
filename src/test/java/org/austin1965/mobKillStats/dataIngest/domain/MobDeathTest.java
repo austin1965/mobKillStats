@@ -1,8 +1,8 @@
-package org.austin1965.mobKillStats.domain;
+package org.austin1965.mobKillStats.dataIngest.domain;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import org.austin1965.mobSkillStats.domain.MobDeath;
+import org.austin1965.mobSkillStats.dataIngest.domain.MobDeath;
 import org.junit.jupiter.api.Test;
 
 public class MobDeathTest {

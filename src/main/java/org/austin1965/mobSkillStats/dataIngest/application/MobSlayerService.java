@@ -1,9 +1,9 @@
-package org.austin1965.mobSkillStats.application;
+package org.austin1965.mobSkillStats.dataIngest.application;
 
-import org.austin1965.mobSkillStats.domain.MobDeath;
-import org.austin1965.mobSkillStats.domain.PlayerKills;
-import org.austin1965.mobSkillStats.driven.PlayerKillPersistence;
-import org.austin1965.mobSkillStats.driven.PlayerKillPersistenceImpl;
+import org.austin1965.mobSkillStats.dataIngest.domain.MobDeath;
+import org.austin1965.mobSkillStats.dataIngest.domain.PlayerKills;
+import org.austin1965.mobSkillStats.dataIngest.driven.PlayerKillPersistence;
+import org.austin1965.mobSkillStats.dataIngest.driven.PlayerKillPersistenceImpl;
 
 public class MobSlayerService {
 

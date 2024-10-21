@@ -1,7 +1,7 @@
-package org.austin1965.mobSkillStats.driving;
+package org.austin1965.mobSkillStats.dataIngest.driving;
 
-import org.austin1965.mobSkillStats.application.MobSlayerService;
-import org.austin1965.mobSkillStats.domain.MobDeath;
+import org.austin1965.mobSkillStats.dataIngest.application.MobSlayerService;
+import org.austin1965.mobSkillStats.dataIngest.domain.MobDeath;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDeathEvent;

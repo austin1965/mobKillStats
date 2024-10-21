@@ -1,4 +1,4 @@
-package org.austin1965.mobSkillStats.domain;
+package org.austin1965.mobSkillStats.dataIngest.domain;
 
 import java.util.Map;
 import java.util.Objects;
