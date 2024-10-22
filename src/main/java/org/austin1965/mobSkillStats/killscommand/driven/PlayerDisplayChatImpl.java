@@ -1,6 +1,7 @@
-package org.austin1965.mobSkillStats;
+package org.austin1965.mobSkillStats.killscommand.driven;
 
 import java.util.Map;
+
 import org.austin1965.mobSkillStats.dataIngest.domain.PlayerKills;
 import org.bukkit.Bukkit;
 

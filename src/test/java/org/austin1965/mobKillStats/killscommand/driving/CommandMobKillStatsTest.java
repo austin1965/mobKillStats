@@ -1,11 +1,11 @@
-package org.austin1965.mobKillStats;
+package org.austin1965.mobKillStats.killscommand.driving;
 
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
 import org.austin1965.mobKillStats.dummyImplementations.DummyPlayer;
-import org.austin1965.mobSkillStats.CommandMobKillStats;
-import org.austin1965.mobSkillStats.MobKillDisplayService;
+import org.austin1965.mobSkillStats.killscommand.driving.CommandMobKillStats;
+import org.austin1965.mobSkillStats.killscommand.application.MobKillDisplayService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
