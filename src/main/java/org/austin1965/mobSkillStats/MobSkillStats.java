@@ -11,6 +11,7 @@ public final class MobSkillStats extends JavaPlugin {
   public void onEnable() {
     new File("plugins\\MobKillStatsUserData").mkdirs();
     Bukkit.getPluginManager().registerEvents(new EntityDeathListener(), this);
+    this.getCommand("mobkillstats").setExecutor(new CommandMobKillStats());
   }
 
   @Override

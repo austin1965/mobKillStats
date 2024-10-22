@@ -2,3 +2,9 @@ name: mobSkillStats
 version: '1.0-SNAPSHOT'
 main: org.austin1965.mobSkillStats.MobSkillStats
 api-version: '1.21'
+
+commands:
+  mobkillstats:
+      description: something
+      usage: /<command>
+      permission:  mobkillstats.readkills
