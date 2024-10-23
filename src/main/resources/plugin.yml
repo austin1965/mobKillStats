@@ -1,6 +1,6 @@
-name: mobSkillStats
+name: mobKillStats
 version: '1.0-SNAPSHOT'
-main: org.austin1965.mobSkillStats.MobSkillStats
+main: org.austin1965.mobKillStats.MobKillStats
 api-version: '1.21'
 
 commands:

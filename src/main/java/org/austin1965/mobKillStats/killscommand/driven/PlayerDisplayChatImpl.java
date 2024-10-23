@@ -1,8 +1,8 @@
-package org.austin1965.mobSkillStats.killscommand.driven;
+package org.austin1965.mobKillStats.killscommand.driven;
 
 import java.util.Map;
 
-import org.austin1965.mobSkillStats.dataIngest.domain.PlayerKills;
+import org.austin1965.mobKillStats.dataIngest.domain.PlayerKills;
 import org.bukkit.Bukkit;
 
 public class PlayerDisplayChatImpl implements PlayerDisplay {

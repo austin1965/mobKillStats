@@ -1,6 +1,6 @@
-package org.austin1965.mobSkillStats.dataIngest.driven;
+package org.austin1965.mobKillStats.dataIngest.driven;
 
-import org.austin1965.mobSkillStats.dataIngest.domain.PlayerKills;
+import org.austin1965.mobKillStats.dataIngest.domain.PlayerKills;
 
 public interface PlayerKillPersistence {
   void saveKills(PlayerKills kills);

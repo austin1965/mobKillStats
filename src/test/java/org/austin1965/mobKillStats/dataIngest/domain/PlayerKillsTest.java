@@ -4,7 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.austin1965.mobSkillStats.dataIngest.domain.PlayerKills;
+
 import org.junit.jupiter.api.Test;
 
 public class PlayerKillsTest {

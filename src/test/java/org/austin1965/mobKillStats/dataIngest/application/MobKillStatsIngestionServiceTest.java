@@ -5,10 +5,10 @@ import static org.mockito.Mockito.*;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.austin1965.mobSkillStats.dataIngest.application.MobSlayerService;
-import org.austin1965.mobSkillStats.dataIngest.domain.MobDeath;
-import org.austin1965.mobSkillStats.dataIngest.domain.PlayerKills;
-import org.austin1965.mobSkillStats.dataIngest.driven.PlayerKillPersistence;
+
+import org.austin1965.mobKillStats.dataIngest.domain.MobDeath;
+import org.austin1965.mobKillStats.dataIngest.domain.PlayerKills;
+import org.austin1965.mobKillStats.dataIngest.driven.PlayerKillPersistence;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -16,8 +16,9 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
-public class MobSlayerServiceTest {
-  @InjectMocks MobSlayerService classUnderTest;
+public class MobKillStatsIngestionServiceTest {
+  @InjectMocks
+  MobKillStatsIngestionService classUnderTest;
 
   @Mock PlayerKillPersistence playerKillPersistence;
 

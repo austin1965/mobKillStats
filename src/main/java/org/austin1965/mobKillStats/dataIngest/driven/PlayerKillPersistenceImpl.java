@@ -1,11 +1,11 @@
-package org.austin1965.mobSkillStats.dataIngest.driven;
+package org.austin1965.mobKillStats.dataIngest.driven;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-import org.austin1965.mobSkillStats.dataIngest.domain.PlayerKills;
+import org.austin1965.mobKillStats.dataIngest.domain.PlayerKills;
 
 public class PlayerKillPersistenceImpl implements PlayerKillPersistence {
   public void saveKills(PlayerKills kills) {

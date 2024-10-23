@@ -6,9 +6,8 @@ import static org.mockito.Mockito.verify;
 
 import org.austin1965.mobKillStats.dummyImplementations.DummyLivingEntity;
 import org.austin1965.mobKillStats.dummyImplementations.DummyPlayer;
-import org.austin1965.mobSkillStats.dataIngest.application.MobSlayerService;
-import org.austin1965.mobSkillStats.dataIngest.domain.MobDeath;
-import org.austin1965.mobSkillStats.dataIngest.driving.EntityDeathListener;
+import org.austin1965.mobKillStats.dataIngest.application.MobKillStatsIngestionService;
+import org.austin1965.mobKillStats.dataIngest.domain.MobDeath;
 import org.bukkit.entity.EntityType;
 import org.bukkit.event.entity.EntityDeathEvent;
 import org.junit.jupiter.api.Test;
@@ -19,7 +18,8 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
 public class EventDeathListenerTest {
-  @Mock MobSlayerService mobSlayerService;
+  @Mock
+  MobKillStatsIngestionService mobKillStatsIngestionService;
 
   @InjectMocks EntityDeathListener classUnderTest;
 
@@ -40,7 +40,7 @@ public class EventDeathListenerTest {
 
     // then
     MobDeath expectedMobDeath = new MobDeath("some player", EntityType.ZOMBIE.name());
-    verify(mobSlayerService, times(1)).countMobKill(refEq(expectedMobDeath));
+    verify(mobKillStatsIngestionService, times(1)).countMobKill(refEq(expectedMobDeath));
   }
 
   @Test
@@ -57,6 +57,6 @@ public class EventDeathListenerTest {
 
     // then
     MobDeath expectedMobDeath = new MobDeath(null, EntityType.ZOMBIE.name());
-    verify(mobSlayerService, times(1)).countMobKill(refEq(expectedMobDeath));
+    verify(mobKillStatsIngestionService, times(1)).countMobKill(refEq(expectedMobDeath));
   }
 }

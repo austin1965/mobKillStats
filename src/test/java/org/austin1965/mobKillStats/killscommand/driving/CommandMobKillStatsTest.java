@@ -4,8 +4,7 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
 import org.austin1965.mobKillStats.dummyImplementations.DummyPlayer;
-import org.austin1965.mobSkillStats.killscommand.driving.CommandMobKillStats;
-import org.austin1965.mobSkillStats.killscommand.application.MobKillDisplayService;
+import org.austin1965.mobKillStats.killscommand.application.MobKillStatsDisplayService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -15,7 +14,8 @@ import org.mockito.junit.jupiter.MockitoExtension;
 @ExtendWith(MockitoExtension.class)
 public class CommandMobKillStatsTest {
 
-  @Mock MobKillDisplayService mobKillDisplayService;
+  @Mock
+  MobKillStatsDisplayService mobKillStatsDisplayService;
 
   @InjectMocks CommandMobKillStats classUnderTest;
 
@@ -29,6 +29,6 @@ public class CommandMobKillStatsTest {
     classUnderTest.onCommand(player, null, "mobKillStats", new String[] {});
 
     // then
-    verify(mobKillDisplayService, times(1)).displayMobKills("some player");
+    verify(mobKillStatsDisplayService, times(1)).displayMobKills("some player");
   }
 }
