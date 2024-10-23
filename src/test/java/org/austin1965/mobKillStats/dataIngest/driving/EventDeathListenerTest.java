@@ -4,10 +4,10 @@ import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-import org.austin1965.mobKillStats.dummyImplementations.DummyLivingEntity;
-import org.austin1965.mobKillStats.dummyImplementations.DummyPlayer;
 import org.austin1965.mobKillStats.dataIngest.application.MobKillStatsIngestionService;
 import org.austin1965.mobKillStats.dataIngest.domain.MobDeath;
+import org.austin1965.mobKillStats.dummyImplementations.DummyLivingEntity;
+import org.austin1965.mobKillStats.dummyImplementations.DummyPlayer;
 import org.bukkit.entity.EntityType;
 import org.bukkit.event.entity.EntityDeathEvent;
 import org.junit.jupiter.api.Test;
@@ -18,8 +18,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
 public class EventDeathListenerTest {
-  @Mock
-  MobKillStatsIngestionService mobKillStatsIngestionService;
+  @Mock MobKillStatsIngestionService mobKillStatsIngestionService;
 
   @InjectMocks EntityDeathListener classUnderTest;
 

@@ -5,7 +5,6 @@ import static org.mockito.Mockito.*;
 
 import java.util.HashMap;
 import java.util.Map;
-
 import org.austin1965.mobKillStats.dataIngest.domain.MobDeath;
 import org.austin1965.mobKillStats.dataIngest.domain.PlayerKills;
 import org.austin1965.mobKillStats.dataIngest.driven.PlayerKillPersistence;
@@ -17,8 +16,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
 public class MobKillStatsIngestionServiceTest {
-  @InjectMocks
-  MobKillStatsIngestionService classUnderTest;
+  @InjectMocks MobKillStatsIngestionService classUnderTest;
 
   @Mock PlayerKillPersistence playerKillPersistence;
 

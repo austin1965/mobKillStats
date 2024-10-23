@@ -14,8 +14,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 @ExtendWith(MockitoExtension.class)
 public class CommandMobKillStatsTest {
 
-  @Mock
-  MobKillStatsDisplayService mobKillStatsDisplayService;
+  @Mock MobKillStatsDisplayService mobKillStatsDisplayService;
 
   @InjectMocks CommandMobKillStats classUnderTest;
 

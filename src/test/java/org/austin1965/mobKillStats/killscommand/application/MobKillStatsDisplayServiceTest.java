@@ -3,10 +3,9 @@ package org.austin1965.mobKillStats.killscommand.application;
 import static org.mockito.Mockito.*;
 
 import java.util.HashMap;
-
-import org.austin1965.mobKillStats.killscommand.driven.PlayerDisplay;
 import org.austin1965.mobKillStats.dataIngest.domain.PlayerKills;
 import org.austin1965.mobKillStats.dataIngest.driven.PlayerKillPersistence;
+import org.austin1965.mobKillStats.killscommand.driven.PlayerDisplay;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
